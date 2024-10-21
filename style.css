@@ -1283,3 +1283,46 @@ background-color: red;
     align-items: center;
     justify-content: center;
 }
+/* updated portfolio media query after upload */
+@media (min-width: 701px) and (max-width: 800px) {
+    .imagebg {
+        width: 650px;
+        height: 650px;
+        left: 100px;
+
+    }
+    .image {
+        width: 600px;
+        height: 600px;
+        top: 100px;
+        left: 130px;
+    }
+    .rectangel {
+        width: 420px;
+        height: 3px;
+        top: 698px;
+        left: 230px;
+        background-color: rgba(245, 245, 245, 0.956);
+    }
+    
+}
+@media only screen and (max-width: 768) {
+    main {
+        height: auto;
+    }
+    .about-me {
+        height: auto;
+    }
+    .education {
+        height: auto;
+    }
+    .skills {
+        height: auto;
+    }
+    .projects-section {
+        height: auto;
+    }
+    .bodyforcontactform {
+        height: auto;
+    }
+}
