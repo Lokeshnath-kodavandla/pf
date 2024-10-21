@@ -144,11 +144,11 @@
     <div class="bodyforcontactform">
         <div class="contact-form">
             <h2>Contact Me</h2>
-            <form id="myForm">
-                <input type="text" id="from_name" placeholder="Your Name" required>
-                <input type="email" id="from_email" placeholder="Your Email" required>
-                <input type="text" id="subject" placeholder="Subject" required>
-                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <form id="myForm" action="https://formspree.io/f/mvgoggyb" method="POST">
+                <input type="text" name="from_name" id="from_name" placeholder="Your Name" required>
+                <input type="email" name="from_email" id="from_email" placeholder="Your Email" required>
+                <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
             <div id="form-response"></div>
@@ -158,7 +158,6 @@
     <p class="paragraph-contact">Get in touch with me</p>
     
     <script src="script.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 </body>
 </html>
