@@ -99,5 +99,28 @@ function closesidebar() {
     const sidebar = document.querySelector('.nav_itemss');
     sidebar.style.display = 'none';
 }
+/* Contact form script */
+document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const formData = new FormData(this); // Create FormData object
+
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    document.getElementById("form-response").innerHTML = "Message sent successfully!";
+                    this.reset(); // Clear form
+                } else {
+                    document.getElementById("form-response").innerHTML = "Error sending message. Please try again.";
+                }
+            }).catch(error => {
+                document.getElementById("form-response").innerHTML = "Error sending message. Please try again.";
+            });
+        });
 
 
