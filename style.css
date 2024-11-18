@@ -607,7 +607,7 @@ main {
 /* animations */
 
 
-#animate-r {
+/* #animate-r {
     animation-name: ani;
     animation-duration: 1s;
     animation-timing-function: 2s;
@@ -653,7 +653,7 @@ main {
     100% {
         transform: rotate(360deg);
     }
-}
+} */
 /* image in skills some code is here */
 .divforskill1 span img {
     background-color: rgba(245, 245, 245, 0.703);
