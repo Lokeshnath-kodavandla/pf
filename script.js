@@ -123,4 +123,12 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
             });
         });
 
-
+document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+        // Change the tab title when the user switches tabs
+        document.title = " 😭 Come back Portfolio";
+    } else {
+        // Restore the original tab title when the user returns
+        document.title = "Portfolio |Lokeshnath";
+    } 
+});
