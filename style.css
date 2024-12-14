@@ -944,6 +944,14 @@ background-color: red;
         text-align: center;
         width: 480px;
     }
+    .abilities {
+        width: 550px !important;
+        height: 900px !important;
+    }
+    .skillinnersec {
+        width: 500px;
+        height: auto;
+    }
 
 }
 @media(min-width: 481px) and (max-width: 800px) {
@@ -1008,6 +1016,14 @@ background-color: red;
     .name {
         width: 700px !important;
         font-size: 3rem !important;
+    }
+    .abilities {
+        width: 850px !important;
+        height: 900px !important;
+    }
+    .skillinnersec {
+        width: 500px;
+        height: auto;
     }
     
     .paragraph-about {
@@ -1325,4 +1341,57 @@ background-color: red;
     .bodyforcontactform {
         height: auto;
     }
+}
+
+
+
+
+.abilities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(101, 3, 193);
+}
+.skillinnersec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 700px;
+    height: auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    background-color: rgb(67, 5, 125);
+    border-radius: 8px;
+}
+#box {
+    border-radius: 4.5px;
+    width: 100px;
+    height: 100px;
+    background-color:  rgb(29, 2, 53);
+    margin: 10px;
+    transition: all ease;
+}
+#box:hover {
+    transform: scale(1.05); /* Enlarge the box */
+    box-shadow: 4px 4px 8px rgb(56, 4, 105); /* Add a shadow effect */
+    background-color:  rgb(27, 3, 48); /* Optional: Change background color */
+    cursor: pointer; /* Indicate interactivity */
+}
+.boxselector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2px;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+}
+.box-img {
+    width: 46px;
+    height: 46px;
+    margin: 4px;
+    background-color: none;
 }
