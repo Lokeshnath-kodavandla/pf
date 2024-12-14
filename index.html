@@ -243,6 +243,34 @@
     <p class="paragraph-contact">Get in touch with me</p>
     
     <script src="script.js"></script>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', event => {
+            event.preventDefault();
+        });
+
+        // Disable Keyboard Shortcuts
+        document.addEventListener('keydown', event => {
+            if (
+                event.key === 'F12' || // F12
+                (event.ctrlKey && event.shiftKey && ['I', 'C', 'J'].includes(event.key)) || // Ctrl+Shift+I/C/J
+                (event.ctrlKey && event.key === 'U') // Ctrl+U
+            ) {
+                event.preventDefault();
+                alert("Keyboard shortcuts for developer tools are disabled!");
+            }
+        });
+
+        // Detect Developer Tools Open
+        setInterval(() => {
+            const devtools = /./;
+            devtools.toString = () => 'devtools-open';
+            console.log(devtools);
+            if (console.log.toString().includes('devtools-open')) {
+                alert("Developer tools are open! Please close them.");
+            }
+        }, 1000);
+    </script>
 
 </body>
 </html>
