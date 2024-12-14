@@ -245,7 +245,18 @@
                 alert("Developer tools are open! Please close them.");
             }
         }, 1000);
+
+        document.addEventListener('visibilitychange', function () {
+            if (document.hidden) {
+                // Change the tab title when the user switches tabs
+                document.title = " 😭 Come back Portfolio";
+            } else {
+                // Restore the original tab title when the user returns
+                document.title = "Portfolio |Lokeshnath";
+            } 
+        });
     </script>
+    
 
 </body>
 </html>
